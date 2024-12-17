@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="first-section">
+            <!-- Image on the Left -->
+            <div class="image-container">
+                <img src="images/header-photo/hoodie.png" alt="Hoodie Image" class="image">
+            </div>
+            <!-- Text on the Right -->
+            <div class="text-container">
+                <span class="small-text"><i class="bi bi-bell-fill"></i>Selling fast! 5 people have this in their
+                    carts.</span>
+                <h2>Personalized Photo and Slogan Text Hoodie</h2>
+
+                <!-- price -->
+                <div class="price">
+                    <p>$39.99 <span class="harsh">$44.44</span></p>
+                    <div class="icon-text-container">
+                        <i class="bi bi-bag-check-fill icon"></i>
+                        <span class="in-stock">In stock</span>
+                    </div>
+                </div>
+
+                <!-- review-rating -->
+                <!-- Review-Rating Section -->
+                <div class="review-rating">
+                    <!-- Five Star Rating (You can use icons for the stars) -->
+                    <div class="stars">
+                        <i class="bi bi-star-fill star"></i>
+                        <i class="bi bi-star-fill star"></i>
+                        <i class="bi bi-star-fill star"></i>
+                        <i class="bi bi-star-fill star"></i>
+                        <i class="bi bi-star-fill star"></i>
+                    </div>
+
+                    <!-- Review Text -->
+                    <p class="review-text">Love this! When I saw this hoodie, I knew I had to get it. It makes me so
+                        confident every time I wear it. Thanks</p>
+
+                    <!-- Reviewer Name -->
+                    <p class="reviewer-name"><strong>Wendy N.</strong></p>
+                </div>
+
+                <!-- color -->
+                <div class="color-section">
+                    <h3>Color</h3>
+                    <div class="color-circles">
+                        <div class="circle" style="background-color: #FFFFFF;" data-color="#FFFFFF"></div>
+                        <div class="circle" style="background-color: #242424;" data-color="#242424"></div>
+                        <div class="circle" style="background-color: #242424;" data-color="#242424"></div>
+                        <div class="circle" style="background-color: #25549E;" data-color="#25549E"></div>
+                        <div class="circle" style="background-color: #C5A174;" data-color="#C5A174"></div>
+                    </div>
+                </div>
+
+                <!-- size-section -->
+                <div class="size-section">
+                    <h3>Size</h3>
+                    <div class="size-options">
+                        <div class="size-option" data-size="S">S</div>
+                        <div class="size-option" data-size="M">M</div>
+                        <div class="size-option" data-size="L">L</div>
+                        <div class="size-option active" data-size="XL">XL</div> <!-- XL is preselected -->
+                    </div>
+                </div>
+
+                <!-- custom -->
+                <div class="custom-text-section">
+                    <h3><strong>Type your custom text</strong></h3>
+                    <p>Please note the font size and color in parentheses after your text.
+                        E.g. My BFF (30, Black)
+                    </p>
+                    <input type="text" class="custom-input" placeholder="My custom hoodie">
+                </div>
+
+                <!-- perfect-section -->
+                <div class="perfect-for-section">
+                    <h3>Perfect to</h3>
+
+                    <!-- First Line: Star Icon and Text -->
+                    <div class="icon-text">
+                        <i class="bi bi-star-fill icon-blue"></i>
+                        <span>Dress yourself up</span>
+                    </div>
+
+                    <!-- Second Line: Gift Icon and Text -->
+                    <div class="icon-text">
+                        <i class="bi bi-gift-fill icon-blue"></i>
+                        <span>Anniversary gifts for your loved one</span>
+                    </div>
+
+                    <!-- Third Line: Heart Icon and Text -->
+                    <div class="icon-text">
+                        <i class="bi bi-heart-fill icon-blue"></i>
+                        <span>Birthday or celebration gifts for friends and family</span>
+                    </div>
+                </div>
+
+                <div class="buttons-container">
+                    <!-- Quantity Control Button (in a box) -->
+                    <div class="quantity-box">
+                        <button class="quantity-btn" id="minus-btn">-</button>
+                        <span id="quantity">1</span>
+                        <button class="quantity-btn" id="plus-btn">+</button>
+                    </div>
+
+                    <!-- Get My Hoodie Button -->
+                    <button class="get-hoodie-btn">GET MY HOODIE</button>
+                </div>
+
+                <div class="guaranteed-safe-checkout">
+                    <div class="line-left"></div>
+                    <span class="checkout-text">Guaranteed SAFE Checkout</span>
+                    <div class="line-right"></div>
+                </div>
+
+                <div class="image-row">
+                    <img src="images/payment-methods/method-1.png" alt="Payment Method 1" class="payment-image">
+                    <img src="images/payment-methods/method-2.png" alt="Payment Method 2" class="payment-image">
+                    <img src="images/payment-methods/method-3.png" alt="Payment Method 3" class="payment-image">
+                    <img src="images/payment-methods/method-4.png" alt="Payment Method 4" class="payment-image">
+                    <img src="images/payment-methods/method-5.png" alt="Payment Method 5" class="payment-image">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- tabs -->
+    <section class="container">
+        <div class="tab-container">
+            <div class="tab-header">
+                <button class="tab-link active" onclick="openTab(event, 'overview')">OVERVIEW</button>
+                <button class="tab-link" onclick="openTab(event, 'sizing')">SIZING</button>
+                <button class="tab-link" onclick="openTab(event, 'package')">PACKAGE</button>
+                <button class="tab-link" onclick="openTab(event, 'shipping')">SHIPPING & FREE RETURNS</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="overview" class="tab-content active">
+                <div class="overview-container">
+                    <!-- First Column -->
+                    <div class="overview-column-1">
+                        <h3>Overview</h3>
+                        <p>
+                            One of our most popular t-shirts for direct-to-garment printing.<br><br>
+                            It’s eco-friendly, unisex, and available in plenty of colour options. And it’s manufactured
+                            not only to high quality standards but with garment decoration in mind. It’s made for DTG,
+                            made for embroidery. There’s a reason why countless online clothing brands use it as their
+                            staple hoodie! Find yours below.
+
+                        <ul>
+                            <li>Unisex style, medium fit. It’s for everyone.</li>
+                            <li>Round drawcords in matching body color.</li>
+                            <li>1x1 rib at sleeve hem and bottom hem.</li>
+                            <li>Flatlock topstitch on all seams.</li>
+                            <li>Kangaroo pocket with flatlock topstitch.</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <!-- Second Column -->
+                    <div class="overview-column-2">
+                        <h3 class="material">Material</h3>
+                        <ul>
+                            <li>85% Organic ring-spun Combed Cotton</li>
+                            <li>15% Recycled Polyester</li>
+                        </ul>
+
+                        <h3 class="weight">Weight</h3>
+                        <ul>
+                            <li>270 gsm.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Third Column -->
+                    <div class="overview-column">
+                        <h3>Color Information</h3>
+                        <p>Color representation is only as accurate as the web design process allows.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Tabs (hidden by default) -->
+            <div id="sizing" class="tab-content">
+                <div class="sizing-container">
+                    <!-- First Column: Front and Back Images -->
+                    <div class="sizing-column-1">
+                        <h3>Front and Back</h3>
+                        <div class="sizing-images">
+                            <img src="images/size/front.png" alt="Front" class="sizing-image">
+                            <img src="images/size/back.png" alt="Back" class="sizing-image">
+                        </div>
+                    </div>
+
+                    <!-- Second Column: Size Chart -->
+                    <div class="sizing-column-2">
+                        <h3>Size Chart</h3>
+                        <table class="size-chart">
+                            <thead>
+                                <tr>
+                                    <th>Sizes</th>
+                                    <th>S</th>
+                                    <th>M</th>
+                                    <th>L</th>
+                                    <th>XL</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Half Chest</td>
+                                    <td>51.5</td>
+                                    <td>54</td>
+                                    <td>57</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <td>Body Length</td>
+                                    <td>66</td>
+                                    <td>70</td>
+                                    <td>72</td>
+                                    <td>74</td>
+                                </tr>
+                                <tr>
+                                    <td>Sleeve Length</td>
+                                    <td>64</td>
+                                    <td>65.5</td>
+                                    <td>67</td>
+                                    <td>68.5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="package" class="tab-content">
+            <div class="package-container">
+                <!-- First Column: Eco-friendly Packaging -->
+                <div class="package-column-1">
+                    <h3>Eco-friendly Packaging</h3>
+                    <p>
+                        All orders are shipped in 100% plastic-free packaging. Hoodies are folded neatly into these
+                        bags, to save on packing materials and reduce waste. We do not pack items into individual bags
+                        before they are shipped in these mailers.
+                    </p>
+                    <p>
+                        Our paper postal mailing bags are manufactured from responsible, sustainable sources to comply
+                        with FSC certification. The paper is both compostable and degradable, and paper mailers can be
+                        easily recycled, making this an extremely eco-friendly option. The weather-proof parcel protects
+                        its contents during transit.
+                    </p>
+                </div>
+
+                <!-- Second Column: Free Gift Wrapping -->
+                <div class="package-column-2">
+                    <h3>Free Gift Wrapping</h3>
+                    <p>
+                        If you need extra help wrapping your order as a gift for your friends and loved ones, we are at
+                        your service. And it's totally FREE!
+                    </p>
+                    <p>
+                        Just don’t forget to add a note to us for any request when you check out, and we'll make it the
+                        most perfect gift ever.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="shipping" class="tab-content">
+            <div class="shipping-returns-container">
+
+                <!-- Shipping and Free Returns in the same row -->
+                <div class="shipping-returns-row">
+                    <!-- Shipping Column -->
+                    <div class="shipping-column">
+                        <h3>Shipping</h3>
+                        <p>
+                            The products are printed and shipped via a third party printing company, with times that
+                            vary due to order volume.<br><br>
+                            We would currently allow up to 3 weeks for your order to arrive just to be safe, though it
+                            could take much less time!<br><br>
+                            If you need the hoodie immediately than the estimated time, please upgrade shipping in the
+                            cart.
+                        </p>
+                    </div>
+
+                    <!-- Free Returns Column -->
+                    <div class="returns-column">
+                        <h3>Free Returns</h3>
+                        <p>
+                            If you are not 100% satisfied with your items, you may return your order for a refund on all
+                            eligible merchandise (Original shipping charges are non-refundable). Our return policy is
+                            effective for up to 60 days from when the order is fulfilled.<br><br>
+                            We want you to have the best experience when shopping online with us, so if for whatever
+                            reason you’re not happy with your purchase, please let us know via:
+                            <strong>gemcustom@gmail.com</strong>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-box">
+            <i class="bi bi-gem"></i>
+            <h3>Premium Quality</h3>
+            <p>Prints that last a long time. At GemCustom, we take product quality very seriously.</p>
+        </div>
+        <div class="feature-box">
+            <i class="bi bi-send"></i>
+            <h3>Free Delivery</h3>
+            <p>Spend from $50 to get free shipping worldwide with 24/7 order tracking.</p>
+        </div>
+        <div class="feature-box">
+            <i class="bi bi-arrow-repeat"></i>
+            <h3>Easy Return</h3>
+            <p>If you’re not happy with the order, ship it back to us for an exchange—no extra cost.</p>
+        </div>
+        <div class="feature-box">
+            <i class="bi bi-bag"></i>
+            <h3>Green Packaging</h3>
+            <p>We care about our Planet, so your order will come plastic-free, recyclable & reusable!</p>
+        </div>
+    </section>
+
+    <!-- Customer Review Section -->
+    <section class="reviews">
+        <div class="review-section">
+            <h2 class="review-title">From Our Hoodie & Tees Lovers</h2>
+            <p class="review-subtitle">What customers have been saying!</p>
+    
+            <!-- Review Container -->
+            <div class="review-container">
+    
+                <!-- Slide 1 -->
+                <div class="review-slide">
+                    <div class="review-content">
+                        <div class="reviewer-info">
+                            <img src="images/review-images/review-image01.png" alt="Heather Watson">
+                            <div class="reviewer-details">
+                                <h3>Heather Watson</h3>
+                                <span>★★★★★</span>
+                            </div>
+                        </div>
+    
+                        <p class="review-slide-header">
+                            <strong>I got one for myself and one for my daughter, they’re so stinking adorable.</strong>
+                        </p>
+                        <p class="review-description">
+                            Such a cute way to match my baby when it gets cold again. The hoodies are true to size, I ordered
+                            a youth medium and it fits PERFECTLY! Overall, 100% satisfied and will definitely order again.
+                        </p>
+    
+                        <div class="purchased-item">
+                            <strong>Purchased Item:</strong>
+                            <div class="item-details">
+                                <img src="images/review-images/review-image03.png" alt="Product Image" class="item-image">
+                                <div class="item-info">
+                                    <a href="#">Personalized Photo and Slogan Text Hoodie</a>
+                                    <p class="item-price">$39.99 <del>$44.44</del></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-image">
+                        <img src="images/review-images/review-image02.png" alt="Hoodie">
+                    </div>
+                </div>
+    
+                <!-- Slide 2 -->
+                <div class="review-slide">
+                    <div class="review-content">
+                        <div class="reviewer-info">
+                            <img src="images/review-images/review-image04.png" alt="Bianca Watts">
+                            <div class="reviewer-details">
+                                <h3>Bianca Watts</h3>
+                                <span>★★★★★</span>
+                            </div>
+                        </div>
+    
+                        <p class="review-slide-header">
+                            <strong>LOVE IT!!! Good quality and arrived earlier than expected</strong>
+                        </p>
+                        <p class="review-description">
+                            I absolutely love this shirt! I bought one for my whole family. We are surprising the kids with
+                            Disney, and these shirts will be great to wear to the park. Very quick ship too!
+                        </p>
+    
+                        <div class="purchased-item">
+                            <strong>Purchased Item:</strong>
+                            <div class="item-details">
+                                <img src="images/review-images/review-image06.png" alt="Product Image" class="item-image">
+                                <div class="item-info">
+                                    <a href="#">Personalized Photo and Slogan Text T-shirt</a>
+                                    <p class="item-price">$24.99 <del>$27.77</del></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-image">
+                        <img src="images/review-images/review-image05.png" alt="T-shirt">
+                    </div>
+                </div>
+    
+                <!-- Slide 3 -->
+                <div class="review-slide">
+                    <div class="review-content">
+                        <div class="reviewer-info">
+                            <img src="images/review-images/review-image07.png" alt="Gavin Preston">
+                            <div class="reviewer-details">
+                                <h3>Gavin Preston</h3>
+                                <span>★★★★★</span>
+                            </div>
+                        </div>
+    
+                        <p class="review-slide-header">
+                            <strong>Perfect! The shipping time was perfect and the shirts are so soft</strong>
+                        </p>
+                        <p class="review-description">
+                            My wife loved them and we had a lot of people compliment us on our shirts. Great quality, fast shipping, true to size. Love that you can choose your own colors. Thanks, guys!
+                        </p>
+    
+                        <div class="purchased-item">
+                            <strong>Purchased Item:</strong>
+                            <div class="item-details">
+                                <img src="images/review-images/review-image09.png" alt="Product Image" class="item-image">
+                                <div class="item-info">
+                                    <a href="#">Personalized Photo and Slogan Text T-shirt</a>
+                                    <p class="item-price">$24.99 <del>$27.77</del></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-image">
+                        <img src="images/review-images/review-image08.png" alt="T-shirt">
+                    </div>
+                </div>
+    
+                <!-- Arrows for navigation (placed inside review-container) -->
+                <div class="navigation">
+                    <span class="prev" onclick="moveSlide(-1)">&#8592;</span>
+                    <span class="next" onclick="moveSlide(1)">&#8594;</span>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Product Matching Section -->
+    <section class="custom-product-carousel">
+        <div class="carousel-title-sub">
+            <h2 class="carousel-title">For Head-to-Toe Matching</h2>
+            <p class="carousel-subtitle">The collection that goes perfectly with your hoodie!</p>
+        </div>
+        
+        <!-- Carousel container -->
+        <div class="custom-carousel-container">
+            
+            <!-- Left arrow -->
+            <label class="custom-carousel-arrow left" for="prev">&#8592;</label>
+    
+            <!-- Image cards container with scroll-snap -->
+            <div class="custom-carousel-items">
+                <div class="custom-carousel-item">
+                    <img src="images/product-list/product-list-01.png" alt="Personalized T-shirt">
+                </div>
+                <div class="custom-carousel-item">
+                    <img src="images/product-list/product-list-02.png" alt="Personalized Cap">
+                </div>
+                <div class="custom-carousel-item">
+                    <img src="images/product-list/product-list03.png" alt="Personalized Tote Bag">
+                </div>
+            </div>
+    
+            <!-- Right arrow -->
+            <label class="custom-carousel-arrow right" for="next">&#8594;</label>
+    
+        </div>
+    
+        <!-- Button for all products -->
+        <button class="view-all-btn">View All Custom Products</button>
+
+            <!-- Hidden checkboxes for controlling the carousel -->
+    <input type="radio" id="prev" name="carousel-control" class="carousel-control" hidden>
+    <input type="radio" id="next" name="carousel-control" class="carousel-control" hidden>
+    
+    </section>
+    
+
+    <section class="faq-section">
+        <div class="faq-container">
+          <!-- Left Column: Title and Description -->
+          <div class="faq-title-column">
+            <h2 class="faq-heading">Frequently Asked Questions</h2>
+            <p class="faq-description">
+              If you haven't found the answer you need, email us at <strong>gemcustom@gmail.com</strong>!
+            </p>
+          </div>
+      
+          <!-- Right Column: FAQ Questions and Answers -->
+          <div class="faq-accordion-column">
+            <!-- FAQ Item 1 - Open by Default -->
+            <div class="faq-item active"> <!-- Added 'active' class here -->
+              <button class="faq-question">
+                <span>Why do I have to choose a high-resolution image for my printed product?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Please understand that our print is entirely based on what image you share with us. Using an image with a resolution of at least 300dpi will make your product look its best.
+                </p>
+              </div>
+            </div>
+      
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Can I make changes to my order once it has been placed?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+              </div>
+            </div>
+      
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Can I cancel my order if I change my mind?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+              </div>
+            </div>
+      
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How do I track my order?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+              </div>
+            </div>
+      
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How long before I get my return refund?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- gallery -->
+      <section class="gallery-section">
+        <h2 class="section-heading">You Should Be The Next One Here!</h2>
+        <p class="section-subtext">
+            Follow us at <span class="highlight">@GemCustom</span> and use the hashtag 
+            <span class="highlight">#GemCustom</span> to be featured
+        </p>
+        <div class="image-gallery">
+            <!-- Image 1 -->
+            <div class="gallery-item gallery-item-1">
+                <img src="images/gallery/gallery01.png" alt="Couple in Custom Hoodie">
+            </div>
+            <!-- Image 2 -->
+            <div class="gallery-item gallery-item-2">
+                <img src="images/gallery/gallery02.png" alt="Woman in Sporty Cap">
+            </div>
+            <!-- Image 3 -->
+            <div class="gallery-item gallery-item-3">
+                <img src="images/gallery/gallery03.png" alt="Friends in Custom T-Shirts">
+            </div>
+            <!-- Image 4 -->
+            <div class="gallery-item gallery-item-4">
+                <img src="images/gallery/gallery04.png" alt="Tote Bag with Custom Print">
+            </div>
+        </div>
+        <div class="navigation-arrows">
+            <button class="arrow-btn">&larr;</button>
+            <button class="arrow-btn">&rarr;</button>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Privacy</a>
+            <a href="#">FAQs</a>
+            <a href="#">Return</a>
+        </footer>
+    </section>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
